@@ -20,15 +20,12 @@ Ouvrez le dossier du projet dans VS Code
 Cliquez droit sur le fichier index.html et sélectionnez "Open with Live Server"
 📂 Structure du projet
 
-text
 jap-tourisme/
 │
-
 ├── index.html
 ├── styles/
 │   └── style.css
 └── images/
-
     ├── header-image.jpg
     ├── tokyo.jpg
     ├── kyoto.jpg
