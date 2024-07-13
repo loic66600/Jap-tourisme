@@ -21,11 +21,14 @@ Cliquez droit sur le fichier index.html et sélectionnez "Open with Live Server"
 📂 Structure du projet
 
 jap-tourisme/
+
 │
 ├── index.html
 ├── styles/
+
 │   └── style.css
 └── images/
+
     ├── header-image.jpg
     ├── tokyo.jpg
     ├── kyoto.jpg
