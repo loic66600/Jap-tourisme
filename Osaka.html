@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jap'tourisme - Agence de réservation</title>
-        <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
-      <link rel="stylesheet" href="design/style.css">
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaka - Jap'tourisme</title>
+    <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
+    <link rel="stylesheet" href="design/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="conteneur header-inner">
+            <a class="brand" href="index.html">Jap'tourisme</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Tokyo.html">Tokyo</a></li>
+                    <li><a href="Kyoto.html">Kyoto</a></li>
+                    <li><a href="Yokohama.html">Yokohama</a></li>
+                    <li><a href="hotels.html">Hôtels</a></li>
+                    <li><a href="sejours.html">Séjours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-       <!--socials-->
-       <meta name="og:title" content="Jap'tourisme">
-       <meta name="og:description" content="L'expert ds voyages de rêve au pays du soleil levant">
-       <meta name="og:image" content="https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg">
-       <meta name="og:url" content="https://rossignol66.000webhostapp.com/">
-       <meta name="og:site_name" content="Jap'tourisme">
-       <meta name="og:image:alt" content="Japon">
-     <!--responsive-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-    </head>
+    <main class="conteneur">
+        <article class="content-article">
+            <img class="page-hero-image" src="IMAGES/ville-osaka1.webp" alt="Osaka de nuit">
+            <h1 class="section-title">Osaka, gastronomie et énergie</h1>
+            <p>Osaka est parfaite pour les voyageurs qui aiment la cuisine japonaise, l’ambiance détendue et les sorties nocturnes. La ville est aussi très pratique pour visiter Kyoto, Nara et Kobe.</p>
+            <ul class="info-list">
+                <li>Quartier à vivre : Namba et Dōtonbori</li>
+                <li>Durée conseillée : 2 à 3 jours</li>
+                <li>Spécialités : takoyaki et okonomiyaki</li>
+            </ul>
+        </article>
 
-      <body>
+        <section>
+            <h2 class="section-title">Points d’intérêt</h2>
+            <div class="grid-3">
+                <article class="card"><div class="card-content"><h3>Château d’Osaka</h3><p>Monument historique entouré d’un grand parc.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Dōtonbori</h3><p>Canal, enseignes lumineuses et street food.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Umeda Sky Building</h3><p>Vue panoramique sur toute la ville.</p></div></article>
+            </div>
+        </section>
 
-        <header>
-            Jap'tourisme
-        </header>
-    <section>
-        <img src="IMAGES/ville-osaka1.webp" alt="PHOTO japon" width="100%">
-           <h1 span class="mot"> Une ville charmante et détendue</span></h1> 
-    
-<nav>
+        <section>
+            <h2 class="section-title">Pour organiser votre séjour</h2>
+            <div class="grid-2">
+                <article class="card"><div class="card-content"><h3>Hôtels Osaka</h3><p>Offres quartier Namba dès <span class="price">65€/nuit</span>.</p><a href="hotels.html">Trouver un hôtel</a></div></article>
+                <article class="card"><div class="card-content"><h3>Parcours Osaka + Kyoto</h3><p>Itinéraire sur 4 jours dans le Kansai.</p><a href="parcours.html">Voir l’itinéraire</a></div></article>
+            </div>
+        </section>
+    </main>
 
-    <p>Osaka est une grande ville portuaire et un centre commerçant de l'île japonaise d'Honshū. Elle est connue pour son architecture moderne, sa vie nocturne et la qualité de sa street food. Principal monument historique de la ville, le château d'Osaka, construit au XVIe siècle lors du shogunat, a subi plusieurs restaurations. Il est entouré de douves ainsi que d'un parc planté de pruniers, de pêchers et de cerisiers à fleurs. Le Sumiyoshi-taisha est l'un des plus anciens sanctuaires shinto du pays.</p>
-        <img src="IMAGES/ville-osaka2.webp" alt="photo samouraï" width="50%">
-</nav>
-    <footer>
-        <div class="conteneur" id="flexbox-foot">
-            <div id="logo-foot">
-                  <img src="https://png.pngtree.com/png-vector/20220712/ourmid/pngtree-japan-flag-watercolor-painted-brush-png-image_5891452.png" alt="japon" style="width:70px;display: block "/>
-                  2023 © Jap'tourisme 
-               </div>
-              <nav>
-                  <ul>
-                      <li><a href="index.html" target="_blank">Acceuil</a></li>
-                      <li><a href="apropos.html">A propos</a></li>
-                      
-                  </ul>
-              </nav>
-      </footer>
-     </body>
+    <footer class="site-footer">
+        <div class="conteneur footer-inner">
+            <p>2026 © Jap'tourisme</p>
+            <ul>
+                <li><a href="En voir plus.html">Culture</a></li>
+                <li><a href="apropos.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

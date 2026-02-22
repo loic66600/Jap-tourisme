@@ -1,49 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jap'tourisme - Agence de réservation</title>
-        <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
-      <link rel="stylesheet" href="design/style.css">
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto - Jap'tourisme</title>
+    <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
+    <link rel="stylesheet" href="design/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="conteneur header-inner">
+            <a class="brand" href="index.html">Jap'tourisme</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Tokyo.html">Tokyo</a></li>
+                    <li><a href="Osaka.html">Osaka</a></li>
+                    <li><a href="Yokohama.html">Yokohama</a></li>
+                    <li><a href="hotels.html">Hôtels</a></li>
+                    <li><a href="sejours.html">Séjours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-       <!--socials-->
-       <meta name="og:title" content="Jap'tourisme">
-       <meta name="og:description" content="L'expert ds voyages de rêve au pays du soleil levant">
-       <meta name="og:image" content="https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg">
-       <meta name="og:url" content="https://rossignol66.000webhostapp.com/">
-       <meta name="og:site_name" content="Jap'tourisme">
-       <meta name="og:image:alt" content="Japon">
-     <!--responsive-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-    </head>
+    <main class="conteneur">
+        <article class="content-article">
+            <img class="page-hero-image" src="IMAGES/ville-kyoto1.webp" alt="Temple de Kyoto">
+            <h1 class="section-title">Kyoto, l’âme culturelle du Japon</h1>
+            <p>Ancienne capitale impériale, Kyoto est idéale pour un voyage centré sur la tradition : temples, jardins, geishas de Gion et cuisine kaiseki.</p>
+            <ul class="info-list">
+                <li>Durée idéale : 2 à 4 jours</li>
+                <li>Meilleure période : printemps et automne</li>
+                <li>Accès rapide depuis Osaka en train</li>
+            </ul>
+        </article>
 
-      <body>
+        <section>
+            <h2 class="section-title">À visiter absolument</h2>
+            <div class="grid-3">
+                <article class="card"><div class="card-content"><h3>Fushimi Inari</h3><p>Ses milliers de torii rouges à travers la montagne.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Kinkaku-ji</h3><p>Le célèbre pavillon d’or au bord d’un jardin paisible.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Arashiyama</h3><p>Forêt de bambous et pont Togetsukyō.</p></div></article>
+            </div>
+        </section>
 
-        <header>
-            Jap'tourisme
-        </header>
-    <section>
-        <img src="IMAGES/ville-kyoto1.webp" alt="PHOTO japon" width="100%">
-           <h1 span class="mot">L'ancienne Capitale</span></h1>   
+        <section>
+            <h2 class="section-title">Conseils séjour</h2>
+            <div class="grid-2">
+                <article class="card"><div class="card-content"><h3>Hôtel recommandé</h3><p>Ryokan traditionnel dès <span class="price">120€/nuit</span>.</p><a href="hotels.html">Consulter les hébergements</a></div></article>
+                <article class="card"><div class="card-content"><h3>Parcours 2 jours</h3><p>Temples de l’Est, Gion, puis Arashiyama.</p><a href="parcours.html">Voir l’itinéraire</a></div></article>
+            </div>
+        </section>
+    </main>
 
-<nav>
-
-    
-    <p>Ancienne capitale du Japon, Kyoto est une ville située sur l'île de Honshū. Elle est réputée pour ses nombreux temples bouddhistes classiques, ainsi que ses jardins, ses palais impériaux, ses sanctuaires shinto et ses maisons en bois traditionnelles. Sa renommée vient également de ses traditions comme la cuisine kaiseki, repas composé de plusieurs plats étudiés, et du district de Gion, le quartier des geishas (femmes proposant des prestations de divertissement). </p>
-        <img src="IMAGES/ville-kyoto2.webp" alt="kyoto" width="50%">
-</nav>
-    <footer>
-        <div class="conteneur" id="flexbox-foot">
-            <div id="logo-foot">
-                  <img src="https://png.pngtree.com/png-vector/20220712/ourmid/pngtree-japan-flag-watercolor-painted-brush-png-image_5891452.png" alt="japon" style="width:70px;display: block "/>
-                  2023 © Jap'tourisme 
-               </div>
-              <nav>
-                  <ul>
-                      <li><a href="index.html" target="_blank">Acceuil</a></li>
-                      <li><a href="apropos.html">A propos</a></li>
-                      
-                  </ul>
-              </nav>
-      </footer>
-     </body>
+    <footer class="site-footer">
+        <div class="conteneur footer-inner">
+            <p>2026 © Jap'tourisme</p>
+            <ul>
+                <li><a href="En voir plus.html">Temple & culture</a></li>
+                <li><a href="apropos.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

@@ -1,112 +1,83 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jap'tourisme - Agence de réservation</title>
-        <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
-      <link rel="stylesheet" href="design/style.css">
-      <script src="script.js" defer></script>
-
-       <!--socials-->
-       <meta name="og:title" content="Jap'tourisme">
-       <meta name="og:description" content="L'expert ds voyages de rêve au pays du soleil levant">
-       <meta name="og:image" content="https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg">
-       <meta name="og:url" content="https://rossignol66.000webhostapp.com/">
-       <meta name="og:site_name" content="Jap'tourisme">
-       <meta name="og:image:alt" content="Japon">
-     <!--responsive-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-    </head>
-
-      <body>
-
-        <header>
-            Jap'tourisme
-        </header>
-    <section>
-        <img src="IMAGES/chambre-traditionnelle1.webp" alt="PHOTO japon" width="100%">
-           <h1 span class="mot"> A propos, réservation</span></h1> 
-    
-<nav>
- 
-    <p>La question de savoir où loger lors d'un voyage au Japon est évidemment centrale, que ce soit pour des vacances de quelques jours / semaines ou pour un séjour plus long. Naturellement, il est impossible de répondre définitivement à cette question, puisqu'elle dépend de quantité de facteurs : souplesse du budget, type d'hébergement, emplacement (notamment la proximité des transports en commun et des zones touristiques), durée du séjour, superficie du logement et installations, etc.
-
-        Nous allons répondre à cette problématique en abordant les différentes solutions à envisager, ainsi que les bons plans pour chacune d'elles afin de profiter de tarifs abordables sans rogner sur la qualité de la prestation.
-        
-        Attention : pour les hautes périodes touristiques au Japon (de mi-mars à mi-mai, juillet-août, octobre-novembre, ainsi que les vacances de Noël et nouvel an en particulier) et notamment dans les grandes villes comme Tokyo et Kyoto, nous vous suggérons de réserver vos hébergements au plus tôt tant les meilleurs sont rapidement pris d'assaut ! Pour conserver le maximum de choix, il est souvent intéressant de prospecter plusieurs mois à l'avance.</p>
-        <img src="IMAGES/chambre-luxe1.webp" alt="photo samouraï" width="50%">
-<p>Hôtels (Prix d'une chambre pour 2 personnes)</p>
-
-<p> Prix moyen	Fourchette 
-    de prix	Comparé à la France.<br>
-    Hôtel bon marché	4195 JPY	26 €	23 à 33 €	-54 % <br>
-    Hôtel de gamme moyenne	10253 JPY	65 €	59 à 74 €	-23 % <br>
-    Hôtel haut de gamme	36680 JPY	231 €	206 à 279 €	-17 %
-    </p>
-
-    <fieldset>
-    <legend>Formulaire</legend>
-
-     <!-- Input radio -->
-     <div class="Formulaire">
-      
-        <input type="radio" name="type" id="man" checked />
-        <label for="man">Mr</label>
-
-        <input type="radio" name="type" id="woman" />
-        <label for="woman">Mme</label>
-
-        <input type="radio" name="type" id="other" />
-        <label for="other">Autre</label><br>
-      
-      <br>
-      <form name="RegForm" action="/submit.php" onsubmit="return docs()" method="post" class="docs">
- 
-      <label for="name">Entrez votre Nom</label>
-      <input id="name" type="text" placeholder="Entrez votre Nom" name="Nom"/><br />
-    
-      <br>
-      <label for="email">Entrez votre E-mail</label>
-      <input id="email" type="text" placeholder="Entrez votre E-mail" name="Email"/> <br>
-       
-     <br> 
-        <label for="number-age">Entrez votre âge</label>
-        <input type="number" id="number-age" value="18" oninput="updateRange()">
-    <button onclick="checkAge()">Vérifier l'âge</button><br>
-   
-    <br>
-
-      <textarea cols="50" rows="5" placeholder="Votre message..."></textarea><br />
-
-      <!-- Input Checkbox -->
-      <label><input id="checkbox" type="checkbox" name="checkbox" />Accepter les CGV</label> <br />
-      
-      <div class="buttons">
-      <input type="submit" value="Envoyer" />
-
-    </fieldset>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact et réservation - Jap'tourisme</title>
+  <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
+  <link rel="stylesheet" href="design/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="conteneur header-inner">
+      <a class="brand" href="index.html">Jap'tourisme</a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="hotels.html">Hôtels</a></li>
+          <li><a href="sejours.html">Séjours</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="En voir plus.html">Culture</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-    </form>
-</section>
-      
-<p><u>  mon mail </u> : <a href="mailto:loic.rossignol82@hotmail.fr">loic.rossignol82@hotmail.fr</a></p>
-<p> <b>Mon numero</b> : <a href="tel:0658613049">0658613049</a> 
-</section>
+  </header>
 
-    </nav>
-    <footer>
-        <div class="conteneur" id="flexbox-foot">
-            <div id="logo-foot">
-                  <img src="https://png.pngtree.com/png-vector/20220712/ourmid/pngtree-japan-flag-watercolor-painted-brush-png-image_5891452.png" alt="japon" style="width:70px;display: block "/>
-                  2023 © Jap'tourisme 
-               </div>
-              <nav>
-                  <ul>
-                      <li><a href="index.html" target="_blank">Acceuil</a></li>
-                      <li><a href="apropos.html">A propos</a></li>
-                      
-                  </ul>
-              </nav>
-      </footer>
-     </body>
+  <main class="conteneur">
+    <article class="content-article">
+      <img class="page-hero-image" src="IMAGES/chambre-traditionnelle1.webp" alt="Chambre traditionnelle japonaise">
+      <h1 class="section-title">Contact et demande de réservation</h1>
+      <p>Nous vous aidons à préparer un voyage personnalisé au Japon : choix des villes, budget, style d’hébergement, durée et activités. Complétez le formulaire, nous vous recontactons rapidement.</p>
+      <div class="grid-2">
+        <div class="card"><div class="card-content"><h3>Email</h3><p><a href="mailto:loic.rossignol82@hotmail.fr">loic.rossignol82@hotmail.fr</a></p></div></div>
+        <div class="card"><div class="card-content"><h3>Téléphone</h3><p><a href="tel:0658613049">06 58 61 30 49</a></p></div></div>
+      </div>
+    </article>
+
+    <section class="formulaire">
+      <h2 class="section-title">Votre projet de voyage</h2>
+      <form name="RegForm" action="#" onsubmit="return docs()" method="post" class="form-grid">
+        <div class="inline-group">
+          <label><input type="radio" name="civilite" value="M." checked> M.</label>
+          <label><input type="radio" name="civilite" value="Mme"> Mme</label>
+          <label><input type="radio" name="civilite" value="Autre"> Autre</label>
+        </div>
+
+        <div>
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="Nom" placeholder="Votre nom complet">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="Email" placeholder="exemple@email.com">
+        </div>
+
+        <div>
+          <label for="number-age">Âge</label>
+          <input id="number-age" type="number" min="18" max="99" value="25">
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Budget, villes souhaitées, période, nombre de personnes..."></textarea>
+        </div>
+
+        <label><input id="checkbox" type="checkbox" name="checkbox"> J'accepte les CGV et la politique de contact.</label>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="conteneur footer-inner">
+      <p>2026 © Jap'tourisme</p>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hotels.html">Hôtels</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>

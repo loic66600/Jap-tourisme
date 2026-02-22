@@ -1,48 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jap'tourisme - Agence de réservation</title>
-        <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
-      <link rel="stylesheet" href="design/style.css">
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo - Jap'tourisme</title>
+    <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
+    <link rel="stylesheet" href="design/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="conteneur header-inner">
+            <a class="brand" href="index.html">Jap'tourisme</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Kyoto.html">Kyoto</a></li>
+                    <li><a href="Osaka.html">Osaka</a></li>
+                    <li><a href="Yokohama.html">Yokohama</a></li>
+                    <li><a href="hotels.html">Hôtels</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-       <!--socials-->
-       <meta name="og:title" content="Jap'tourisme">
-       <meta name="og:description" content="L'expert ds voyages de rêve au pays du soleil levant">
-       <meta name="og:image" content="https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg">
-       <meta name="og:url" content="https://rossignol66.000webhostapp.com/">
-       <meta name="og:site_name" content="Jap'tourisme">
-       <meta name="og:image:alt" content="Japon">
-     <!--responsive-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-    </head>
+    <main class="conteneur">
+        <article class="content-article">
+            <img class="page-hero-image" src="IMAGES/ville-Tokyo.webp" alt="Skyline de Tokyo">
+            <h1 class="section-title">Tokyo, la capitale futuriste</h1>
+            <p>Tokyo mélange quartiers ultra-modernes, temples historiques et cuisine exceptionnelle. C’est la meilleure porte d’entrée pour un premier voyage au Japon grâce à ses transports efficaces et sa grande offre d’hôtels.</p>
+            <ul class="info-list">
+                <li>Meilleure période : mars-avril et octobre-novembre</li>
+                <li>Durée conseillée : 3 à 5 jours</li>
+                <li>Aéroports : Haneda (HND) et Narita (NRT)</li>
+            </ul>
+        </article>
 
-      <body>
+        <section>
+            <h2 class="section-title">Incontournables</h2>
+            <div class="grid-3">
+                <article class="card"><div class="card-content"><h3>Asakusa</h3><p>Visitez le temple Sensō-ji et ses ruelles traditionnelles.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Shibuya</h3><p>Découvrez le carrefour mythique et la vie nocturne.</p></div></article>
+                <article class="card"><div class="card-content"><h3>Shinjuku</h3><p>Panorama, shopping et restaurants ouverts tard.</p></div></article>
+            </div>
+        </section>
 
-        <header>
-            Jap'tourisme
-        </header>
-    <section>
-        <img src="IMAGES/ville-Tokyo.webp" alt="PHOTO japon" width="100%">
-           <h1 span class="mot">La Capitale</span></h1> 
-    
-<nav> 
+        <section>
+            <h2 class="section-title">Sélection rapide</h2>
+            <div class="grid-3">
+                <article class="card"><div class="card-content"><h3>Hôtels</h3><p>Business hôtel dès <span class="price">70€/nuit</span>.</p><a href="hotels.html">Voir la liste</a></div></article>
+                <article class="card"><div class="card-content"><h3>Séjours</h3><p>Pack 5 jours Tokyo + Hakone.</p><a href="sejours.html">Voir les séjours</a></div></article>
+                <article class="card"><div class="card-content"><h3>Parcours</h3><p>Itinéraire 72h spécial première visite.</p><a href="parcours.html">Voir le parcours</a></div></article>
+            </div>
+        </section>
 
-    <p>La ville de Tokyo (東京 Tōkyō, « Capitale à l'Est ») est la riche et gigantesque capitale du Japon et sa plus grande ville, débordant de culture, de commerce et surtout d'habitants. Étant la zone urbaine la plus densément peuplée au monde, Tokyo est une métropole fascinante qui mélange les influences étrangères, la culture de consommation et le commerce mondial avec les vestiges de la capitale de l'ancien Japon. Mélangeant l'électronique moderne, les gratte-ciels étincelants, les cerisiers en fleurs et le Palais impérial, c'est une ville qui représente toute l'entendue de l'histoire et la culture japonaise. À moins d'être totalement allergique aux grandes villes, c'est un incontournable pour un premier voyage au Japon car elle a vraiment quelque chose pour chaque voyageur et est la plus accessible en avion depuis l'étranger.</p>
-        <img src="IMAGES/TOKYO.WEB1.webp" alt="TOKYO" width="50%">
-</nav>
-    <footer>
-        <div class="conteneur" id="flexbox-foot">
-            <div id="logo-foot">
-                  <img src="https://png.pngtree.com/png-vector/20220712/ourmid/pngtree-japan-flag-watercolor-painted-brush-png-image_5891452.png" alt="japon" style="width:70px;display: block "/>
-                  2023 © Jap'tourisme 
-               </div>
-              <nav>
-                  <ul>
-                      <li><a href="index.html" target="_blank">Acceuil</a></li>
-                      <li><a href="apropos.html">A propos</a></li>
-                      
-                  </ul>
-              </nav>
-      </footer>
-     </body>
+        <section>
+            <h2 class="section-title">Carte locale</h2>
+            <div class="map-wrap">
+                <iframe title="Carte de Tokyo" src="https://www.openstreetmap.org/export/embed.html?bbox=139.57%2C35.55%2C139.92%2C35.81&amp;layer=mapnik"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="conteneur footer-inner">
+            <p>2026 © Jap'tourisme</p>
+            <ul>
+                <li><a href="apropos.html">Contact</a></li>
+                <li><a href="En voir plus.html">Culture</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

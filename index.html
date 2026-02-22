@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <!--information-->
-    <title>Jap'tourisme - Agence de réservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jap'tourisme - Voyage au Japon</title>
     <link rel="icon" href="IMAGES/favicon (3).ico" type="image/x-icon">
     <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="script.js" defer></script>
-
-    <!--socials-->
-    <meta name="og:title" content="Jap'tourisme">
-    <meta name="og:description" content="L'expert ds voyages de rêve au pays du soleil levant">
-    <meta name="og:image"
-        content="https://a.cdn-hotels.com/gdcs/production147/d1285/0745ceba-e251-44dd-900d-758bd7078d8a.jpg">
-    <meta name="og:url" content="https://rossignol66.000webhostapp.com/">
-    <meta name="og:site_name" content="Jap'tourisme">
-    <meta name="og:image:alt" content="Japon">
-
-    <!--encodage-->
-    <meta charset="utf-8">
-    <!--responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-
 </head>
-<!--corp-->
-
 <body>
-    <!--conteneur-->
-    <section id="bienvenue">
-        <!--en-tete-->
-        <div class="conteneur">
-            <header>
-                Jap'tourisme
-                <span id="slogan"> L'expert des voyages de rêve au pays du soleil levant.</span>
-            </header>
-        </div>
-    </section>
-
-    <!--contenu-->
-    <section class="contenu conteneur">
-        <!--TOP-->
-        <section>
-            <h1>Nos meilleures destinations</h1>
-            <p id="top">
-                Sélectionnez votre future déstinations dans une séléction des villes les plus demandées.
-            </p>
-
-            <section id="flexbox-ville">
-
-                <a href="Tokyo.html" id="tokyo" class="ville">Tokyo</a>
-
-                <a href="Kyoto.html" id="kyoto" class="ville">Kyoto</a>
-
-                <a href="Osaka.html" id="osaka" class="ville">Osaka</a>
-
-                <a href="Yokohama.html" id="yokohama" class="ville">Yokohama</a>
-
-            </section>
-
-            <!--EN VOIR PLUS-->
-            <div style="text-align: right; margin-top: 10px;">
-                <a href="En voir plus.html" style="display: inline-flex; align-items: center; color: black ">Temple et
-                    Culture<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M13 5.499a.996.996 0 0 0-1 1v2.559c-4.5.498-8 4.309-8 8.941v1c2.245-3.423 5.25-3.92 8-3.989v2.489a.999.999 0 0 0 1.707.707L20 11.999l-6.293-6.208A.996.996 0 0 0 13 5.499z" />
-                    </svg></a>
-            </div>
-        </section>
-    </section>
-
-    <!--pied-->
-    <footer>
-        <div class="conteneur" id="flexbox-foot">
-            <div id="logo-foot">
-                <img src="https://png.pngtree.com/png-vector/20220712/ourmid/pngtree-japan-flag-watercolor-painted-brush-png-image_5891452.png"
-                    alt="japon" style="width:70px;display: block " />
-                2023 © Jap'tourisme
-            </div>
-            <nav>
+    <header class="site-header">
+        <div class="conteneur header-inner">
+            <a class="brand" href="index.html">Jap'tourisme</a>
+            <nav class="site-nav" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="index.html" target="_blank">Acceuil</a></li>
-                    <li><a href="apropos.html">A propos, réservation</a></li>
-
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Tokyo.html">Tokyo</a></li>
+                    <li><a href="Kyoto.html">Kyoto</a></li>
+                    <li><a href="Osaka.html">Osaka</a></li>
+                    <li><a href="Yokohama.html">Yokohama</a></li>
+                    <li><a href="hotels.html">Hôtels</a></li>
+                    <li><a href="sejours.html">Séjours</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="En voir plus.html">Culture</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+    </header>
+
+    <section class="hero" style="background-image: url('IMAGES/JAPON.WEB.webp');">
+        <div class="conteneur hero-content">
+            <h1>Voyager au Japon simplement</h1>
+            <p>Préparez votre itinéraire, comparez des hôtels, trouvez des séjours et découvrez les incontournables de Tokyo, Kyoto, Osaka et Yokohama.</p>
+            <div class="cta-list">
+                <a class="btn btn-primary" href="sejours.html">Voir les séjours</a>
+                <a class="btn btn-light" href="parcours.html">Découvrir les parcours</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteneur">
+        <section>
+            <h2 class="section-title">Nos destinations phares</h2>
+            <p class="section-intro">Chaque ville a une ambiance différente : modernité, tradition, gastronomie et panorama marin.</p>
+            <div class="grid-4">
+                <article class="card">
+                    <img class="card-image" src="IMAGES/ville-Tokyo.webp" alt="Vue de Tokyo">
+                    <div class="card-content">
+                        <h3>Tokyo</h3>
+                        <p>Mégapole moderne, quartiers animés et temples historiques.</p>
+                        <a href="Tokyo.html">Explorer Tokyo</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="IMAGES/ville-kyoto1.webp" alt="Temple à Kyoto">
+                    <div class="card-content">
+                        <h3>Kyoto</h3>
+                        <p>La ville des temples, des jardins zen et de la culture traditionnelle.</p>
+                        <a href="Kyoto.html">Explorer Kyoto</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="IMAGES/ville-osaka1.webp" alt="Ville d'Osaka">
+                    <div class="card-content">
+                        <h3>Osaka</h3>
+                        <p>Street food, château d'Osaka et ambiance conviviale de nuit.</p>
+                        <a href="Osaka.html">Explorer Osaka</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="IMAGES/ville-yokohama1.webp" alt="Front de mer de Yokohama">
+                    <div class="card-content">
+                        <h3>Yokohama</h3>
+                        <p>Ville portuaire moderne, promenade de bord de mer et quartier chinois.</p>
+                        <a href="Yokohama.html">Explorer Yokohama</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Carte des points d’intérêt</h2>
+            <div class="map-toolbar" aria-label="Filtres de la carte">
+                <button type="button" class="map-filter-btn is-active" data-filter="all">Tout</button>
+                <button type="button" class="map-filter-btn" data-filter="ville">Villes</button>
+                <button type="button" class="map-filter-btn" data-filter="temple">Temples</button>
+                <button type="button" class="map-filter-btn" data-filter="hotel">Hôtels</button>
+                <button type="button" class="map-filter-btn" data-filter="parcours">Parcours</button>
+            </div>
+            <div class="grid-2">
+                <div class="map-wrap">
+                    <div id="japan-map" aria-label="Carte interactive du Japon"></div>
+                </div>
+                <ul class="spot-list">
+                    <li><strong>Tokyo :</strong> Sensō-ji, Shibuya, Tokyo Skytree</li>
+                    <li><strong>Kyoto :</strong> Fushimi Inari, Kinkaku-ji, Arashiyama</li>
+                    <li><strong>Osaka :</strong> Dōtonbori, Château d’Osaka, Umeda Sky</li>
+                    <li><strong>Yokohama :</strong> Minato Mirai, Chinatown, Jardin Sankeien</li>
+                    <li><strong>Nara :</strong> Parc de Nara et grand Bouddha de Tōdai-ji</li>
+                    <li><strong>Hakone :</strong> Onsen et vue sur le Mont Fuji</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="conteneur footer-inner">
+            <p>2026 © Jap'tourisme - Site voyage Japon</p>
+            <ul>
+                <li><a href="hotels.html">Hôtels</a></li>
+                <li><a href="sejours.html">Séjours</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="apropos.html">Contact & réservation</a></li>
+            </ul>
+        </div>
     </footer>
-
 </body>
-
 </html>
